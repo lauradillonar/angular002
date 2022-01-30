@@ -9,9 +9,14 @@ export class EmpleadoComponent implements OnInit {
   nombre="Juan";
   apellido="Díaz";
   edad=18;
-  //empresa="Píldoras Informáticas";
+  habilitacionCuadro=true;
+  usrRegistrado=false;
 
-  //llamaEmpresa(value:string){}
+  getRegistroUsuario(){
+    this.usrRegistrado=true;
+  }
+
+  
 
   constructor() { }
 
