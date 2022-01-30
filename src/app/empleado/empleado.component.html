@@ -2,4 +2,11 @@
 <p>Apellido: {{apellido}}</p>
 <p>Edad: {{edad
     <18 ? "Menor de edad": "Mayor de edad"}}</p>
-        <p>Empresa: {{empresa}}</p>
+<p>Empresa: {{empresa.value}}</p>
+
+Introduce la empresa: <input type="text" #empresa (keyup)="0">
+<br>
+<br>
+<!--
+<input type="button" value="Dale" (click)="llamaEmpresa(empresa.value)">
+-->
