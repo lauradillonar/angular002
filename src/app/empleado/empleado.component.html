@@ -3,10 +3,12 @@
 <p>Edad: {{edad
     <18 ? "Menor de edad": "Mayor de edad"}}</p>
 <p>Empresa: {{empresa.value}}</p>
-
+<br>
+<br>
 Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
 <br>
 <br>
-Registrado: <input type="checkbox" id="registro" [checked]="usrRegistrado">
+<br> {{textoDeRegistro}}
+<br><input type="radio" name="nRegistro" id="registro" value="si" [checked]="usrRegistrado" (click)="setUsuarioRegistrado($event)"> Registrado
+<br><input type="radio" name="nRegistro" value="no" (click)="setUsuarioRegistrado($event)"> No Registrado
 
-{{getRegistroUsuario()}}
