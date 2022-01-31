@@ -9,9 +9,14 @@ export class EmpleadoComponent implements OnInit {
   nombre="Juan";
   apellido="Díaz";
   edad=18;
-  habilitacionCuadro=true;
+  empresa="Google";
+  habilitacionCuadro=false;
   usrRegistrado=false;
   textoDeRegistro="No hay nadie registrado";
+
+  cambiaEmpresa(event:Event){
+    this.empresa=(<HTMLInputElement>event.target).value;
+  }
 
   getRegistroUsuario(){
     this.usrRegistrado=true;
